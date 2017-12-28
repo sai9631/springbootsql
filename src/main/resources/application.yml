@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-server-client
+    
+  cloud:
+    config:
+      uri: http://localhost:8762
+    
+server:
+  port: 8072
+      
+  profiles:
+    active: developement
+ 
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url: 
+      default-zone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
