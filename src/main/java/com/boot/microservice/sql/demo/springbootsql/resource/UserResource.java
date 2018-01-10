@@ -29,7 +29,7 @@ public class UserResource {
 	@Autowired
 	UserRepository userRepository;
 	
-	@Value("${msg}")
+	//@Value("${msg}")
     private String msg;
 	
 	@RequestMapping(method=RequestMethod.GET,value="/hello")
